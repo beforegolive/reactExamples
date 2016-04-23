@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title><%- htmlWebpackPlugin.options.title %></title>
+  </head>
+  <body>
+    <ul id='nav'>
+      <%= Object.keys(webpackConfig.entry).map(function(e){
+        return `<li><a href="${e}.html">${e}</a></li>`
+      }).join('')%>
+    </ul>
+    <h2><%- htmlWebpackPlugin.options.title %></h2>
+
+    <div>
+      <%= Object.keys(htmlWebpackPlugin.files.chunks).map(function(e){
+      return `<div id="${e}"></div>`
+    }).join('')
+      %>
+    </div>
+
+  </body>
+</html>
