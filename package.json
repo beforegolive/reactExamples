@@ -4,7 +4,8 @@
   "description": "",
   "main": "demo1.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start":"webpack-dev-server --port 4444"
   },
   "author": "",
   "license": "ISC",
@@ -20,6 +21,7 @@
     "react": "^15.0.1",
     "react-dom": "^15.0.1",
     "react-mixin": "^3.0.5",
+    "react-router": "^2.4.1",
     "webpack": "^1.13.0",
     "whatwg-fetch": "^0.11.0"
   }

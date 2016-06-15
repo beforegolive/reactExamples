@@ -20,7 +20,10 @@ module.exports={
     demo5: './demo5/index.js',
     demo6: './demo6/index.js',
     demo7: './demo7/index.js',
-    demo8: './demo8/index.js'
+    demo8: './demo8/index.js',
+    demo9: './demo9/index.js',
+    demo10: './demo10/index.js',
+    demo11: './demo11/index.js'
   },
   output:{
     path: __dirname+'/dist',
@@ -42,6 +45,9 @@ module.exports={
     new HtmlWebpackplugin(htmlWebpackObjectGenerator('demo6')),
     new HtmlWebpackplugin(htmlWebpackObjectGenerator('demo7')),
     new HtmlWebpackplugin(htmlWebpackObjectGenerator('demo8')),
+    new HtmlWebpackplugin(htmlWebpackObjectGenerator('demo9')),
+    new HtmlWebpackplugin(htmlWebpackObjectGenerator('demo10')),
+    new HtmlWebpackplugin(htmlWebpackObjectGenerator('demo11')),
     new webpack.ProvidePlugin({
       $:'jquery',
       jquery:"jquery"
